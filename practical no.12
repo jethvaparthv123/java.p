@@ -1,0 +1,12 @@
+public class Constructor{
+    Constructor(float radius){
+        System.out.println("Area of Circle :- " + ((radius * radius) * 3.14));
+    }
+    Constructor(float length , float width ){
+        System.out.println("Area of Rectangle :- " + (length *width));
+    }
+    public static void main(String[] args) {
+        Constructor C1= new Constructor(7.0f);
+        Constructor C2= new Constructor(9.0f , 6.0f);
+    }
+}
