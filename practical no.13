@@ -1,0 +1,23 @@
+public class Methods{
+    public static void main(String[] args) {
+        String str = "my name parth";
+
+        char c1 = str.charAt(8);
+        System.out.println(c1);
+
+        boolean c2 = str.contains("name");
+        System.out.println(c2);
+
+        
+        String c3 = str.format("name %s" , "parth");
+        System.out.println(c3);
+
+        int c4 = str.length();
+        System.out.println(c4);
+
+        String[] c5 = str.split("hii");
+        for(String word:c5){
+            System.out.println(word);
+        }
+    }
+}
