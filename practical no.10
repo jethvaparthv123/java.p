@@ -1,0 +1,7 @@
+public class Final{
+    final int count = 120;
+    public static void main(String[] args) {
+        Final F1 = new Final();
+        System.out.println(F1.count);
+    }
+}
