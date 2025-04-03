@@ -1,0 +1,30 @@
+class car {
+    int topSpeed;
+    String name;
+
+    public car(int topSpeeda, String namea) {
+        topSpeed = topSpeeda;
+        name = namea;
+    }
+
+    @Override
+    public String toString(){
+        return "name is :"+name+"and the totspeed is "+topSpeed; 
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            car c1 = new car(220, "mustang");
+            car c2 = new car(340, "rangerover");
+            car c3 = new car(240, "thar");
+            car c4 = new car(480, "porsche");
+            car c5 = new car(500, "lamborghini");
+
+            System.out.println(c1);
+            System.out.println(c2);
+            System.out.println(c3);
+            System.out.println(c4);
+            System.out.println(c5);          
+        }
+    }
+}
