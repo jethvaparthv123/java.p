@@ -1,0 +1,16 @@
+public class Studentname{
+    public int ernum;
+    public String name;
+    public Studentname(String name , int ernum){
+        this.ernum = ernum;
+        this.name = name;
+    }
+    public static void main(String[] args) {
+        Studentname s1 = new Studentname("harsh", 24);
+        Studentname s2 = new Studentname("parth", 25);
+        Studentname s3 = new Studentname("shyam", 18);
+        System.out.println(s1.name);
+        System.out.println(s2.name);
+        System.out.println(s3.name);
+    }
+}
