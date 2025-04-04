@@ -1,0 +1,50 @@
+abstract class shape{
+    abstract void area();
+} 
+class Triangle extends shape{
+    double base,height;
+    Triangle(double base,double height){
+        this.base=base;
+        this.height=height;
+    }
+
+ @Override
+ void area(){
+    double r=base*height;
+    System.out.println("area of Triangle "+r);
+ }
+}
+ class Rectangle  extends shape {
+    double l,w;
+    Rectangle(double length,double width){
+        this.l=length;
+        this.w=width;
+    }
+
+  @Override
+  void area(){
+    double r=l*w;
+    System.out.println("the area of Rectange :"+r);
+  }
+}
+class circle extends shape{
+    double radius;
+    circle(double radius){
+        this.radius=radius;
+    }
+ @Override
+ void area(){
+    double r=Math.PI*radius*radius;
+    System.out.println("area of circle result :"+r);
+ }
+}
+public class shapeDemo{
+    public static void main(String[] args) {
+        shape triangle = new Triangle(9,22);
+        shape rectangle = new Rectangle(3, 2);
+        shape circle = new circle(20);
+        triangle.area();
+        rectangle.area();
+        circle.area();
+    }
+}
