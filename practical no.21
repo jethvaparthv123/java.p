@@ -1,0 +1,11 @@
+final class MyClass{
+    public void p1(){
+        System.out.println("this is final class");
+    }
+}
+public class main{
+    public static void main(String[] args) {
+        MyClass M1=new MyClass();
+        M1.p1();
+    }
+}
