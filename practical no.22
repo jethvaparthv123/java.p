@@ -1,0 +1,19 @@
+// folder is mypackage and in there i have myclass:
+
+package mypackage;
+
+public class Myclass {
+    public void sayhello(){
+        System.out.println("hii");
+    } 
+}
+
+// file outside the mypackage folder:
+
+import mypackage.Myclass;
+public class p22 {
+    public static void main(String[] args) {
+        Myclass mc = new Myclass();
+        mc.sayhello();
+    }
+}
