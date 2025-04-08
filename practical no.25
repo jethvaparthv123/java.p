@@ -1,0 +1,77 @@
+class Class1 extends Class {
+    
+    public void run() {
+        try {
+            while (true) {
+                System.out.println("Class1");
+                Class.sleep(1000); 
+            }
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+}
+
+
+class Class2 extends Class {
+
+    public void run() {
+        try {
+            while (true) {
+                System.out.println("Class2");
+                Class.sleep(2000); 
+            }
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Class1 c1 = new Class1()();
+        Class2 t2 = new Class2()();
+
+        c1.start();
+        c2.start();
+    }
+}class Class1 extends Class {
+    
+    public void run() {
+        try {
+            while (true) {
+                System.out.println("Class1");
+                Class.sleep(1000); 
+            }
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+}
+
+
+class Class2 extends Class {
+
+    public void run() {
+        try {
+            while (true) {
+                System.out.println("Class2");
+                Class.sleep(2000); 
+            }
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Class1 c1 = new Class1();
+        Class2 c2 = new Class2();
+
+        c1.start();
+        c2.start();
+    }
+}
