@@ -1,0 +1,21 @@
+import java.util.HashSet;
+
+public class Colordemo {
+    public static void main(String[] args) {
+       
+        HashSet<String> colors = new HashSet<>();
+
+        // Add color names to the HashSet
+        colors.add("Red");
+        colors.add("Black");
+        colors.add("White");
+        colors.add("Yellow");
+        colors.add("Blue");
+
+       
+        System.out.println("Colors in the Colordemo:");
+        for (String color : colors) {
+            System.out.println(color);
+        }
+    }
+}
