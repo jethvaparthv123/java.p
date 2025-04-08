@@ -1,0 +1,23 @@
+import java.util.HashMap;
+
+public class Colordemo {
+    public static void main(String[] args) {
+        
+        HashMap<Integer, String> students = new HashMap<>();
+
+        
+        students.put(01, "harsh");
+        students.put(02, "jack");
+        students.put(10, "jash");
+        students.put(13, "raj");
+        students.put(15, "veer");
+
+      
+        int enrollmentNo = 10;
+        if (students.containsKey(enrollmentNo)) {
+            System.out.println("Student with enrollment number " + enrollmentNo + " is: " + students.get(enrollmentNo));
+        } else {
+            System.out.println("Student not found with enrollment number " + enrollmentNo);
+        }
+    }
+}
